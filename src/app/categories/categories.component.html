@@ -1,0 +1,8 @@
+<p class="text">
+  {{ stateService.listSelectedItem.value }}
+</p>
+<igx-grid [data]="northwindCategories" primaryKey="categoryID" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+  <igx-column field="categoryID" dataType="number" header="categoryID" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="description" dataType="string" header="description" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="name" dataType="string" header="name" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+</igx-grid>

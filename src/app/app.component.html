@@ -1,0 +1,69 @@
+<igx-list class="list">
+  <igx-list-item [selected]="'0' === this.stateService.listSelectedItem.value" (click)="stateService.listSelectedItem.next('0')">
+    <span igxListThumbnail>
+      <igx-avatar shape="circle" class="avatar">
+        <igx-icon>
+          person
+        </igx-icon>
+      </igx-avatar>
+    </span>
+    <span igxListLineTitle>Home</span>
+    <span igxListLineSubTitle>Subtitle...</span>
+    <span igxListAction>
+      <igx-icon class="icon">
+        star
+      </igx-icon>
+    </span>
+  </igx-list-item>
+  <igx-list-item [selected]="'1' === this.stateService.listSelectedItem.value" (click)="clickListItem()">
+    <span igxListThumbnail>
+      <igx-avatar shape="circle" class="avatar">
+        <igx-icon>
+          person
+        </igx-icon>
+      </igx-avatar>
+    </span>
+    <span igxListLineTitle>Categories</span>
+    <span igxListLineSubTitle>Subtitle...</span>
+    <span igxListAction>
+      <igx-icon class="icon">
+        star
+      </igx-icon>
+    </span>
+  </igx-list-item>
+  <igx-list-item [selected]="'2' === this.stateService.listSelectedItem.value" (click)="clickListItem1()">
+    <span igxListThumbnail>
+      <igx-avatar shape="circle" class="avatar">
+        <igx-icon>
+          person
+        </igx-icon>
+      </igx-avatar>
+    </span>
+    <span igxListLineTitle>Products</span>
+    <span igxListLineSubTitle>Subtitle...</span>
+    <span igxListAction>
+      <igx-icon class="icon">
+        star
+      </igx-icon>
+    </span>
+  </igx-list-item>
+  <igx-list-item>
+    <span igxListThumbnail>
+      <igx-avatar shape="circle" class="avatar">
+        <igx-icon>
+          person
+        </igx-icon>
+      </igx-avatar>
+    </span>
+    <span igxListLineTitle>No selection</span>
+    <span igxListLineSubTitle>Subtitle...</span>
+    <span igxListAction>
+      <igx-icon class="icon">
+        star
+      </igx-icon>
+    </span>
+  </igx-list-item>
+</igx-list>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
